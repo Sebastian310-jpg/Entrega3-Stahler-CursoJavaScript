@@ -11,7 +11,11 @@
 
 <body>
     <header>
-        <h1>Tienda de Peliculas</h1>
+        <h1>Página de Peliculas</h1>
+
+        <select id="filtro-genero">
+            <option value="">Todos los Generos</option>
+        </select>
 
         <nav>
             <a href="./index.html" id="ver-inicio">Inicio</a>
@@ -19,7 +23,11 @@
         </nav>
     </header>
 
+    <div id="loader" class="loader"></div>
     <main id="contenedor-peliculas">
+        <div id="mensaje-error">
+
+        </div>
         <!-- <div class="pelicula">
             <img src="" alt="Título de la película">
             <h3>Título de la película</h3>
